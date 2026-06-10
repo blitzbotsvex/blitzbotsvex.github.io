@@ -6,48 +6,48 @@ export default function Gallery() {
   const [activeItem, setActiveItem] = useState(null);
 
   const galleryItems = [
-    {
-      id: 1,
-      title: 'Blitz-6 Chassis CAD',
-      category: 'robots',
-      svgType: 'cad',
-      desc: '3D model assembly showing double-reverse four-bar linkage and pneumatics integration.'
-    },
-    {
-      id: 2,
-      title: 'Season Reveal Reveal Photo',
-      category: 'robots',
-      svgType: 'reveal',
-      desc: 'First profile photoshoot of Blitz-6 ready for VEX competition.'
-    },
-    {
-      id: 3,
-      title: 'California State Championship',
-      category: 'competitions',
-      svgType: 'trophy',
-      desc: 'Team members receiving the Excellence Award at the California State Finals.'
-    },
-    {
-      id: 4,
-      title: 'VEX Worlds Alliance Matches',
-      category: 'competitions',
-      svgType: 'match',
-      desc: 'Alliance coordination discussions before high-stakes match in Dallas, Texas.'
-    },
-    {
-      id: 5,
-      title: 'Gael Force Invitational Workshop',
-      category: 'workshops',
-      svgType: 'workshop',
-      desc: 'Collaborative workshop hosted in Dublin High School room Q12.'
-    },
-    {
-      id: 6,
-      title: 'STEM Outreach at Fallon Middle School',
-      category: 'workshops',
-      svgType: 'outreach',
-      desc: 'Mentoring young students on clawbot assembly and drivetrain principles.'
-    }
+    // {
+    //   id: 1,
+    //   title: 'Blitz-6 Chassis CAD',
+    //   category: 'robots',
+    //   svgType: 'cad',
+    //   desc: '3D model assembly showing double-reverse four-bar linkage and pneumatics integration.'
+    // },
+    // {
+    //   id: 2,
+    //   title: 'Season Reveal Reveal Photo',
+    //   category: 'robots',
+    //   svgType: 'reveal',
+    //   desc: 'First profile photoshoot of Blitz-6 ready for VEX competition.'
+    // },
+    // {
+    //   id: 3,
+    //   title: 'California State Championship',
+    //   category: 'competitions',
+    //   svgType: 'trophy',
+    //   desc: 'Team members receiving the Excellence Award at the California State Finals.'
+    // },
+    // {
+    //   id: 4,
+    //   title: 'VEX Worlds Alliance Matches',
+    //   category: 'competitions',
+    //   svgType: 'match',
+    //   desc: 'Alliance coordination discussions before high-stakes match in Dallas, Texas.'
+    // },
+    // {
+    //   id: 5,
+    //   title: 'Gael Force Invitational Workshop',
+    //   category: 'workshops',
+    //   svgType: 'workshop',
+    //   desc: 'Collaborative workshop hosted in Dublin High School room Q12.'
+    // },
+    // {
+    //   id: 6,
+    //   title: 'STEM Outreach at Fallon Middle School',
+    //   category: 'workshops',
+    //   svgType: 'outreach',
+    //   desc: 'Mentoring young students on clawbot assembly and drivetrain principles.'
+    // }
   ];
 
   const filteredItems = filter === 'all'
@@ -198,7 +198,7 @@ export default function Gallery() {
           <button className="lightbox-close" onClick={() => setActiveItem(null)} aria-label="Close Lightbox">
             <X />
           </button>
-          
+
           <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
             <div style={{ width: '100%', maxWidth: '800px', aspectRatio: '4/3', borderRadius: '12px', overflow: 'hidden' }}>
               {renderSVGImage(activeItem.svgType, true)}
