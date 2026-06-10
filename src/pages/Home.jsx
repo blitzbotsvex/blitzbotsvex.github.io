@@ -3,27 +3,27 @@ import { Award, Shield, Users, Zap, ArrowRight } from 'lucide-react';
 
 export default function Home({ setCurrentPage }) {
   const stats = [
-    { num: '6+', label: 'Years Competing' },
-    { num: '12', label: 'Championship Banners' },
-    { num: '35+', label: 'Active Members' },
-    { num: '4', label: 'Teams (A, B, C, X)' }
+    // { num: '6+', label: 'Years Competing' },
+    // { num: '12', label: 'Championship Banners' },
+    // { num: '35+', label: 'Active Members' },
+    // { num: '4', label: 'Teams (A, B, C, X)' }
   ];
 
   const features = [
     {
       icon: <Zap size={24} />,
       title: 'Precision Build',
-      desc: 'We design custom 3D printed components, CNC machined parts, and compound gear ratios to achieve maximum reliability and speed on the field.'
+      desc: 'Text'
     },
     {
       icon: <Shield size={24} />,
       title: 'Advanced Control',
-      desc: 'Our autonomous code utilizes PID loops, inertial sensors, odometry tracking, and vision sensors to score maximum points in the first 15 seconds.'
+      desc: 'Text'
     },
     {
       icon: <Users size={24} />,
       title: 'Community Outreach',
-      desc: 'Through Blitz Academy and local workshops, we mentor middle schoolers, volunteer at regional events, and champion diverse inclusion in STEM.'
+      desc: 'Text'
     }
   ];
 
@@ -55,17 +55,17 @@ export default function Home({ setCurrentPage }) {
 
         <div className="hero-graphic">
           <div className="graphic-glow-bg"></div>
-          <img 
-            src="/robot.png" 
-            alt="BlitzBots VEX Robot" 
-            className="robot-illustration" 
-            style={{ 
-              zIndex: 2, 
-              width: '100%', 
-              borderRadius: '16px', 
+          <img
+            src="/robot.png"
+            alt="BlitzBots VEX Robot"
+            className="robot-illustration"
+            style={{
+              zIndex: 2,
+              width: '100%',
+              borderRadius: '16px',
               border: '1px solid rgba(255, 255, 255, 0.08)',
               boxShadow: '0 15px 35px rgba(0, 0, 0, 0.6)'
-            }} 
+            }}
           />
         </div>
       </section>

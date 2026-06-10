@@ -68,18 +68,18 @@ export default function Sponsors({ setCurrentPage }) {
         </p>
         <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', marginTop: '32px' }}>
           <a
-            href="mailto:sponsors@blitzbots.org"
+            href="mailto:blitzbotsvexteam@gmail.com"
             className="btn btn-primary"
           >
             <Mail size={16} /> Partner With Us
           </a>
-          <a
-            href="#"
-            onClick={(e) => { e.preventDefault(); alert("Sponsorship package PDF download simulated!"); }}
-            className="btn btn-secondary"
-          >
-            <Download size={16} /> Download Package Packet
-          </a>
+          {/* <a */}
+          {/*   href="#" */}
+          {/*   onClick={(e) => { e.preventDefault(); alert("Sponsorship package PDF download simulated!"); }} */}
+          {/*   className="btn btn-secondary" */}
+          {/* > */}
+          {/*   <Download size={16} /> Download Package Packet */}
+          {/* </a> */}
         </div>
       </section>
 
@@ -88,7 +88,7 @@ export default function Sponsors({ setCurrentPage }) {
         <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.8rem', textAlign: 'center', marginBottom: '40px' }}>
           Sponsorship Packages
         </h3>
-        
+
         <div className="tiers-grid">
           {tiers.map((tier, i) => (
             <div key={i} className={`tier-card glass ${tier.class}`}>

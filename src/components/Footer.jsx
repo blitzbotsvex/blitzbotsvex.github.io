@@ -62,8 +62,8 @@ export default function Footer({ setCurrentPage }) {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} BlitzBots Robotics. All rights reserved.</p>
-        <p>Built with ❤️ by Team BlitzBots</p>
+        {/* <p>&copy; {new Date().getFullYear()} BlitzBots Robotics. All rights reserved.</p> */}
+        <p>Built by Team BlitzBots</p>
       </div>
     </footer>
   );
