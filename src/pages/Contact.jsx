@@ -37,7 +37,7 @@ export default function Contact() {
                 </div>
                 <div className="contact-text">
                   <h4>Location</h4>
-                  <p>Room 000, Placeholder Center<br />123 Placeholder St, Fremont, CA 94539</p>
+                  <p>No location at this time</p>
                 </div>
               </div>
 
@@ -47,7 +47,7 @@ export default function Contact() {
                 </div>
                 <div className="contact-text">
                   <h4>Meeting Hours</h4>
-                  <p>Days & Times<br />0:00 PM - 0:00 PM</p>
+                  <p>Wednesdays and Saturdays<br />12:00 PM - 3:00 PM</p>
                 </div>
               </div>
 
