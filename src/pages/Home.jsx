@@ -13,17 +13,17 @@ export default function Home({ setCurrentPage }) {
     {
       icon: <Zap size={24} />,
       title: 'Precision Build',
-      desc: 'Text'
+      desc: 'Engineered for speed, stability, and high performance. We combine advanced mechanics with robust CAD modeling to construct agile robots capable of handling complex challenges with absolute accuracy.'
     },
     {
       icon: <Shield size={24} />,
       title: 'Advanced Control',
-      desc: 'Text'
+      desc: 'Powering our hardware with intelligent automation. Through seamless sensor integration, computer vision, and optimized code, we give our bots the autonomy to think fast and react faster.'
     },
     {
       icon: <Users size={24} />,
       title: 'Community Outreach',
-      desc: 'Text'
+      desc: 'Sparking a passion for STEM in the next generation. From local workshops to collaborative mentoring, the Blitzbots are dedicated to expanding access to technology and building a brighter future.'
     }
   ];
 
