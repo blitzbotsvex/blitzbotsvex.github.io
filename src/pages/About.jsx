@@ -5,7 +5,7 @@ export default function About() {
   const subteams = [
     {
       icon: <Layers size={22} />,
-      name: 'Mechanical & Build',
+      name: 'Build',
       desc: 'Hands-on assembly of the chassis, lifters, intakes, and pneumatic systems. Masters of structural stability, weight distribution, and mechanical efficiency.'
     },
     {
