@@ -37,7 +37,7 @@ export default function Contact() {
                 </div>
                 <div className="contact-text">
                   <h4>Location</h4>
-                  <p>No location at this time</p>
+                  <p>Fremont, CA</p>
                 </div>
               </div>
 
