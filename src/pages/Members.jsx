@@ -8,8 +8,8 @@ export default function Members() {
     {
       name: 'Daiwik Shah',
       role: 'Team Captain',
-      team: 'Leadership',
-      tag: 'leadership',
+      team: 'Leadership & Builder',
+      tag: 'leadership build',
       avatarColor: 'var(--accent-cyan)',
       bio: '',
       socials: { github: '#', linkedin: '#', email: 'person1@blitzbots.org' }
@@ -60,6 +60,15 @@ export default function Members() {
       socials: { github: '#', linkedin: '#', email: 'person6@blitzbots.org' }
     },
     {
+      name: 'Jai Yadav',
+      role: '',
+      team: 'Builder',
+      tag: 'build',
+      avatarColor: '#00ff87',
+      bio: '',
+      socials: { github: '#', linkedin: '#', email: 'person6@blitzbots.org' }
+    },
+    {
       name: 'Ritik Pradhan',
       role: '',
       team: 'Programmer',
@@ -98,7 +107,7 @@ export default function Members() {
 
   const filteredMembers = activeFilter === 'all'
     ? membersData
-    : membersData.filter(m => m.tag === activeFilter || (activeFilter === 'leadership' && m.role.includes('Captain') || m.role.includes('VP')));
+    : membersData.filter(m => m.tag.includes(activeFilter) || (activeFilter === 'leadership' && m.role.includes('Captain') || m.role.includes('VP')));
 
   return (
     <div>
@@ -139,17 +148,17 @@ export default function Members() {
                 {member.bio}
               </p>
 
-              <div className="member-socials">
-                <a href={member.socials.github} target="_blank" rel="noopener noreferrer" className="member-social-link" aria-label="GitHub">
-                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-                </a>
-                <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer" className="member-social-link" aria-label="LinkedIn">
-                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                </a>
-                <a href={`mailto:${member.socials.email}`} className="member-social-link" aria-label="Email">
-                  <Mail size={18} />
-                </a>
-              </div>
+              {/* <div className="member-socials"> */}
+              {/*   <a href={member.socials.github} target="_blank" rel="noopener noreferrer" className="member-social-link" aria-label="GitHub"> */}
+              {/*     <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> */}
+              {/*   </a> */}
+              {/*   <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer" className="member-social-link" aria-label="LinkedIn"> */}
+              {/*     <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg> */}
+              {/*   </a> */}
+              {/*   <a href={`mailto:${member.socials.email}`} className="member-social-link" aria-label="Email"> */}
+              {/*     <Mail size={18} /> */}
+              {/*   </a> */}
+              {/* </div> */}
             </div>
           </div>
         ))}
