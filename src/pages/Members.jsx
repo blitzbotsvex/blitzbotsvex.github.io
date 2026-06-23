@@ -17,8 +17,8 @@ export default function Members() {
     {
       name: 'Ishan Garg',
       role: 'Team Captain & Software Lead',
-      team: 'Programmer',
-      tag: 'programming',
+      team: 'Leadership & Programmer',
+      tag: 'leadership programming',
       avatarColor: '#00ff87', // Neon green
       bio: '',
       socials: { github: '#', linkedin: '#', email: 'person2@blitzbots.org' }
