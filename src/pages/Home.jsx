@@ -38,7 +38,7 @@ export default function Home({ setCurrentPage }) {
         <div className="hero-content">
           <div style={{ width: '40px', height: '3px', backgroundColor: '#e67e22', marginBottom: '16px' }}></div>
           <div style={{ color: '#e67e22', letterSpacing: '2px', fontWeight: '700', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '16px', fontFamily: 'var(--font-heading)' }}>
-            VEX ROBOTICS TEAM
+            VEX ROBOTICS TEAM 21136D
           </div>
           <h1 className="hero-title" style={{ fontSize: '4.8rem', fontWeight: '800', color: '#fff', textShadow: '0 0 25px rgba(0, 242, 254, 0.45)', marginBottom: '24px', lineHeight: '1.05' }}>
             BLITZ BOTS
