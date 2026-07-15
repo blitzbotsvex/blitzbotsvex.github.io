@@ -94,6 +94,15 @@ export default function Members() {
       avatarColor: '#f1c40f',
       bio: '',
       socials: { github: '#', linkedin: '#', email: 'person8@blitzbots.org' }
+    },
+    {
+      name: 'Maadav Ragavan',
+      role: '',
+      team: 'Outreach',
+      tag: 'outreach',
+      avatarColor: '#f1c40f',
+      bio: '',
+      socials: { github: '#', linkedin: '#', email: 'person8@blitzbots.org' }
     }
   ];
 
